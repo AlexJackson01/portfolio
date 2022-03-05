@@ -53,7 +53,7 @@ h1 {
     padding: 80px;
     font-size: 90px;
     height: 100vh;
-    background-color: #afafbd;
+    background-color: #baa0bd;
 }
 
 h4 {
@@ -109,6 +109,81 @@ h4 {
     color: #539176;
 }
 
+footer {
+    background-color: #afafb4;
+    color: #93baa8;
+    text-align: center;
+    padding: 80px;
+}
+
+.information-alternative {
+    color: #93baa8;
+    text-shadow: -1px 0 #539176, 0 1px #539176, 1px 0 #539176, 0 -1px #539176;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.form {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(122, 122, 125, 0.5);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    height: 30px;
+    width: 300px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.form-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border: solid #539176 2px;
+    background-color: #fcc;
+    color: #539176;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.font-button-container {
+    text-align: center;
+    display: block;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.form-button:hover {
+    background-color: #539176;
+    color: #fcc;
+    border: solid #69ba97 3px;
+}
+
+.button:hover {
+    background-color: #539176;
+    color: #fcc;
+    border: solid #fcc 3px;
+}
+
+.contact-confirmation {
+    color: white;
+}
+
 
 /* body {
     font-family: "Montserrat", sans-serif;
@@ -145,12 +220,7 @@ section {
     color: white;
 }
 
-footer {
-    background-color: #fcc;
-    color: #539176;
-    text-align: center;
-    padding: 80px;
-}
+
 
 .footer-credits p {
     font-size: 20px;
@@ -231,37 +301,7 @@ p {
     color: #fcc;
 }
 
-.form-button {
-    width: 100px;
-    height: 30px;
-    border-radius: 30px;
-    border: solid #539176 2px;
-    background-color: #fcc;
-    color: #539176;
-    text-align: center;
-    font-weight: 500;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-}
 
-.font-button-container {
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.form-button:hover {
-    background-color: #539176;
-    color: #fcc;
-    border: solid #69ba97 3px;
-}
-
-.button:hover {
-    background-color: #539176;
-    color: #fcc;
-    border: solid #fcc 3px;
-}
 
 .button:active {
     background-color: #a9a9a9;
@@ -287,12 +327,6 @@ p {
     text-align: center;
     padding: 50px;
     height: 100vh;
-}
-
-
-.information-alternative {
-    color: #69ba97;
-    text-shadow: -1px 0 #539176, 0 1px #539176, 1px 0 #539176, 0 -1px #539176;
 }
 
 
@@ -324,29 +358,7 @@ a {
     color: white;
 }
 
-form {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
 
-.form {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.form-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto;
-    height: 30px;
-    width: 300px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-}
 
 .hamburger {
     display: none;

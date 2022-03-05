@@ -71,6 +71,10 @@ function App() {
       <Projects />
     </section>
 
+    <footer id="contact">
+      <Contact />
+    </footer>
+
     <Routes>
         <Route
           path="/#about-me"
@@ -95,42 +99,7 @@ function App() {
 
 
 
-    <footer id="contact">
-      <h2 class="information-alternative">Contact Me</h2>
-      <div class="form">
-        <form
-          action="https://formsubmit.co/ajjackson22@gmail.com"
-          method="POST"
-        >
-          <input type="hidden" name="_subject" value="New email!" />
-          <input
-            class="form-row"
-            type="text"
-            name="name"
-            placeholder="Name"
-            required
-          />
-          <input
-            class="form-row"
-            type="email"
-            name="email"
-            placeholder="Email address"
-            required
-          />
-          <input type="hidden" name="_next" value="./thanks.html" />
-          <input
-            class="form-row"
-            type="text"
-            name="message"
-            placeholder="Write your message here"
-            required
-          />
-        </form>
-      </div>
-          <div class="form-button-container">
-            <button class="form-button" type="submit">Send</button>
-          </div>
-          </footer>
+
     </div>
   );
 }
