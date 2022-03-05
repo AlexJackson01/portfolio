@@ -1,5 +1,7 @@
 import React from 'react';
 import Middle from './projects/Middle';
+import Codify from './projects/Codify';
+import Reliked from './projects/Reliked';
 import Fade from 'react-reveal/Fade';
 
 export default function Projects() {
@@ -11,9 +13,12 @@ export default function Projects() {
             </Fade>
             
             <Middle />
+            <Codify />
+            <Reliked />
 
             <div className="project-container">
-                
+             <h4>Currently in development...</h4> 
+
             <div className="project-card">
           <img className="project-image" src="images/RikRok.png" alt="Project 1" />
           <h3>TikTok Clone</h3>
