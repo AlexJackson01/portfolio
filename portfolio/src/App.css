@@ -29,6 +29,14 @@ html {
     margin-right: 20px;
 }
 
+.nav-links:hover {
+    color: white;
+    text-decoration: underline;
+    text-transform: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
 h1 {
     font-size: 90px;
     font-family: "Pacifico", cursive;

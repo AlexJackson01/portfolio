@@ -91,7 +91,7 @@ export default function BackToTop(props) {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar sx={{backgroundColor: "#679a77"}} position="static">
+      <AppBar sx={{backgroundColor: "#679a77", color: "white"}} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -133,7 +133,7 @@ export default function BackToTop(props) {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-                <MenuItem onClick={handleCloseNavMenu}>
+                <MenuItem onClick={handleCloseNavMenu} >
                 <Link to="/#about-me" className='nav-links-menu'>
                 About Me
                 </Link>
@@ -160,9 +160,9 @@ export default function BackToTop(props) {
             <img src={Logo} className="logo" alt="hot air balloon logo" />
                 </Link>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color: "white" }}>
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block', fontFamily: "Montserrat" }}>
-                <Link to="/#about-me" className='nav-links'>
+                <Link to="/#about-me" className='nav-links' sx={{color: "white" }}>
                 About Me
                 </Link>
             </Button>
