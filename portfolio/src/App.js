@@ -14,15 +14,15 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 function App() {
   return (
     <div>
-    <section className="hero">
+    <section className="hero" id="hero">
       <Navbar />
       <Fade bottom>
       <div className="hero-area">
         <div className="hero-text">
           <h1>Alex Jackson</h1>
           <p className="hero-title">Front-End Developer</p>
-          <div className="button">
-          <Button variant="contained" href="#about-me" size="large" sx={{backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
+          <div>
+          <Button variant="contained" href="#about-me" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           About Me
           </Button>
           </div>
@@ -76,6 +76,12 @@ function App() {
     </footer>
 
     <Routes>
+    <Route
+          path="/#hero"
+          element={
+            <App />
+          }
+        />
         <Route
           path="/#about-me"
           element={

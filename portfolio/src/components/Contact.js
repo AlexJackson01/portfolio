@@ -65,7 +65,7 @@ export default function Contact() {
       </div>
     </Box>
       <p>
-          <Button type="submit" variant="contained" size="large" sx={{textAlign: "center", margin: "0 auto", display: "block", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
+          <Button type="submit" variant="contained" size="large" sx={{fontFamily: "Montserrat", textAlign: "center", margin: "0 auto", display: "block", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           Send
           </Button>
           </p>

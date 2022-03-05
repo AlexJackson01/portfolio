@@ -100,9 +100,10 @@ export default function BackToTop(props) {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            <img src={Logo} className="logo" alt="" />
-          </Typography>
-
+            <Link to="/#hero">
+            <img src={Logo} className="logo" alt="hot air balloon logo" />
+            </Link>
+        </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -132,11 +133,21 @@ export default function BackToTop(props) {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem onClick={handleCloseNavMenu}>
+                <Link to="/#about-me" className='nav-links-menu'>
+                About Me
+                </Link>
                 </MenuItem>
-              ))}
+                <MenuItem onClick={handleCloseNavMenu}>
+                <Link to="/#projects" className='nav-links-menu'>
+                Projects
+                </Link>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                <Link to="/#contact" className='nav-links-menu'>
+                Contact
+                </Link>
+                </MenuItem>
             </Menu>
           </Box>
           <Typography
@@ -145,20 +156,22 @@ export default function BackToTop(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
+            <Link to="/#hero" className='nav-links'>
             <img src={Logo} className="logo" alt="hot air balloon logo" />
+                </Link>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block', fontFamily: "Montserrat" }}>
                 <Link to="/#about-me" className='nav-links'>
                 About Me
                 </Link>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block', fontFamily: "Montserrat" }}>
                 <Link to="/#projects" className='nav-links'>
                 Projects
                 </Link>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block', fontFamily: "Montserrat" }}>
                 <Link to="/#contact" className='nav-links'>
                 Contact
                 </Link>
