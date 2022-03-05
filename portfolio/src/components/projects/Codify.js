@@ -2,6 +2,10 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import {Javascript, Hub, Css, GpsFixed, Brush, Room, Route, ThumbUp, LocalFireDepartment, Email} from '@mui/icons-material';
 
 function srcset(image, size, rows = 1, cols = 1) {
     return {
@@ -21,7 +25,36 @@ export default function Codify() {
                 <div className='projects row'>
                 <div className='col-6'>
                 <h2>Codify</h2>
+                <h6>Front end</h6>
+            <div className='tech-stack'>
+            <Stack direction="row" spacing={1} sx={{color: "white", display: "block", margin: "0", }}>
+            <Chip icon={<Javascript style={{color: "white"}}/>} label="Javascript" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+            <Chip icon={<Hub style={{color: "white"}}/>} label="React" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            <Chip icon={<Css style={{color: "white"}}/>} label="CSS/Bootstrap" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            <Chip icon={<GpsFixed style={{color: "white"}}/>} label="TomTom API" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            <Chip icon={<Brush style={{color: "white"}}/>} label="Figma & Canva" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            <Chip icon={<Room style={{color: "white"}}/>} label="Openroute Service API" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            <Chip icon={<Room style={{color: "white"}}/>} label="Google Maps API" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            <Chip icon={<Route style={{color: "white"}}/>} label="React Router" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            <Chip icon={<ThumbUp style={{color: "white"}}/>} label="Font Awesome" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            </Stack>
+</div>
+
+            <h6>Back end</h6>
+            <div className='tech-stack'>
+            <Stack direction="row" spacing={1} sx={{color: "white", display: "block", margin: "0", marginBottom: "5px"}}>
+            <Chip icon={<LocalFireDepartment style={{color: "white", marginBottom: "5px"}}/>} label="Firebase" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+            <Chip icon={<LocalFireDepartment style={{color: "white"}}/>} label="Cloud Firestore" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            <Chip icon={<Email style={{color: "white"}}/>} label="EmailJS" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+            </Stack>
+            </div>
             <p>Codify is an app ....</p>
+            <p><Button variant="contained" href="https://meet-in-the-middle.netlify.app" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
+          See the live app
+          </Button></p>
+          <p><Button variant="contained" href="#about-me" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
+          See on Github
+          </Button></p>
             </div>
         <div className='col-6'>
         <ImageList

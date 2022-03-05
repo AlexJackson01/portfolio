@@ -31,7 +31,7 @@ html {
 
 .nav-links:hover {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
     text-transform: none;
     font-size: 20px;
     margin-right: 20px;
@@ -87,6 +87,24 @@ h2 {
     font-weight: 10;
     color: white;
     padding-bottom: 30px;
+}
+
+h6 {
+    /* font-size: 80px; */
+    font-family: "Montserrat", cursive;
+    /* font-weight: 10; */
+    color: white;
+}
+
+.tech-stack {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tech-icons {
+    margin-bottom: 20px;
 }
 
 p {
