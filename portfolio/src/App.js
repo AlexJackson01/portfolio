@@ -63,6 +63,14 @@ function App() {
       </Fade>
     </section>
 
+    <section id="about-me">
+      <About />
+    </section>
+
+    <section id="projects">
+      <Projects />
+    </section>
+
     <Routes>
         <Route
           path="/#about-me"
@@ -86,71 +94,6 @@ function App() {
 
 
 
-
-
-
-    <section class="sub-section" id="about-me">
-      <div class="information">
-        <h2>About Me</h2>
-        <p>Hello, my name is Alex Jackson. I am a Front-End Developer....</p>
-      </div>
-      <div class="headshot-container">
-        <img
-          class="headshot"
-          src={Me}
-          alt="Alex Jackson headshot"
-        />
-      </div>
-    </section>
-
-    <section class="sub-section-alternative" id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <img
-            class="project-image"
-            src="images/RikRok.png"
-            alt="Project 1 image"
-          />
-          <h3>TikTok Clone</h3>
-          <p class="subtext">This is my project...</p>
-          <hr />
-          <p class="subtext">
-            <a
-              class="project-link"
-              href="https://naughty-cray-2e5fd3.netlify.app/#/"
-              >View here</a>
-          </p>
-        </div>
-        <div class="project-card">
-          <img class="project-image" src="images/BB.png" alt="Project 2 image" />
-          <h3>Beaut Bakes Website</h3>
-          <p class="subtext">This is my project...</p>
-          <hr />
-          <p class="subtext"><a
-            class="project-link"
-            href="https://www.beautbakes.co.uk"
-            >View here</a>
-          </p>
-        </div>
-        <div class="project-card">
-          <img class="project-image" src="images/Hangman.png" alt="Project 3 image" />
-          <h3>Hangman Game</h3>
-          <p class="subtext">This is my project...</p>
-          <hr />
-          <p class="subtext">View here</p>
-        </div>
-        <div class="project-card">
-          <img class="project-image" src="images/petflix.png" alt="Project 4 image" />
-          <h3>Netflix Clone</h3>
-          <p class="subtext">This is my project...</p>
-          <hr />
-          <p class="subtext"><a class="project-link"
-            href="https://romantic-ramanujan-0b1635.netlify.app/#/"
-            >View here</a></p>
-        </div>
-      </div>
-    </section>
 
     <footer id="contact">
       <h2 class="information-alternative">Contact Me</h2>

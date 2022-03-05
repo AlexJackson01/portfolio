@@ -47,6 +47,68 @@ h1 {
     margin: 20px;
 }
 
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    font-size: 90px;
+    height: 100vh;
+    background-color: #afafbd;
+}
+
+h4 {
+    font-size: 80px;
+    font-family: "Pacifico", cursive;
+    font-weight: 10;
+    color: white;
+}
+
+.information p {
+    font-size: 30px;
+}
+
+.headshot {
+    height: 300px;
+    border-radius: 300px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    height: 100%;
+    background-color: #c8595b;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 15px lightgray;
+    margin: 10px;
+    padding: 10px;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #539176;
+}
+
 
 /* body {
     font-family: "Montserrat", sans-serif;
@@ -133,10 +195,7 @@ p {
     font-size: 30px;
 }
 
-.subtext {
-    font-size: 15px;
-    font-weight: 300;
-}
+
 
 .hero-area {
     display: flex;
@@ -222,14 +281,6 @@ p {
     margin: 20px;
 }
 
-.sub-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
-    font-size: 90px;
-    height: 100vh;
-}
-
 .sub-section-alternative {
     display: flex;
     flex-direction: column;
@@ -238,37 +289,13 @@ p {
     height: 100vh;
 }
 
-.headshot {
-    height: 300px;
-    border-radius: 300px;
-}
-
-.headshot-container {
-    display: flex;
-    align-items: center;
-}
-
-.information p {
-    font-size: 30px;
-}
 
 .information-alternative {
     color: #69ba97;
     text-shadow: -1px 0 #539176, 0 1px #539176, 1px 0 #539176, 0 -1px #539176;
 }
 
-.project-card {
-    width: 300px;
-    height: 500px;
-    box-shadow: 5px 5px 15px lightgray;
-    margin: 10px;
-    padding: 10px;
-}
 
-.project-container {
-    display: flex;
-    justify-content: space-around;
-}
 
 @media only screen and (max-width: 1000px) {
     .project-container {
@@ -290,10 +317,7 @@ hr {
     color: lightgray;
 }
 
-.project-link {
-    text-decoration: none;
-    color: #539176;
-}
+
 
 a {
     text-decoration: none;
