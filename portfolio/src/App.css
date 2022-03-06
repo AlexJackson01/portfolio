@@ -100,7 +100,7 @@ h6 {
     display: block;
     margin: 0 auto;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .tech-icons {
@@ -111,6 +111,14 @@ p {
     font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 20px;
+}
+
+.project-description {
+    font-size: 15px;
+}
+
+.project-buttons {
+    margin-top: 40px;
 }
 
 .information p {

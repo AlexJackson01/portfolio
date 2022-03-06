@@ -1,7 +1,8 @@
 import React from 'react';
-import Middle from './projects/Middle';
-import Codify from './projects/Codify';
-import Reliked from './projects/Reliked';
+import Middle from './projects/middle/Middle';
+import Codify from './projects/codify/Codify';
+import Reliked from './projects/reliked/Reliked';
+import MFB from './projects/mighty-fierce-birth/MFB';
 import Fade from 'react-reveal/Fade';
 
 export default function Projects() {
@@ -15,6 +16,7 @@ export default function Projects() {
             <Middle />
             <Codify />
             <Reliked />
+            <MFB />
 
             <div className="project-container">
              <h4>Currently in development...</h4> 
