@@ -1,24 +1,16 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import ImageList from '@mui/material/ImageList';
 import Carousel from 'react-material-ui-carousel'
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import {Javascript, Hub, Css, Brush, Route, ThumbUp, SetMeal, VpnKey, Security, LocalPostOffice, Quiz,
-TableView, TextFields, FormatShapes, ColorLens, Biotech, ArrowForward, ArrowBack} from '@mui/icons-material';
+import {Javascript, Hub, Css, Brush, Route, ThumbUp, ArrowForward, ArrowBack} from '@mui/icons-material';
 import Logo from "../mighty-fierce-birth/MFB-logo.png";
-import About from "../mighty-fierce-birth/MFB-about.png";
+// import About from "../mighty-fierce-birth/MFB-about.png";
 import Figma_1 from "../mighty-fierce-birth/figma1.png";
 import Figma_2 from "../mighty-fierce-birth/figma2.png";
 import Figma_3 from "../mighty-fierce-birth/figma3.png";
-import Home from "../codify/codify-home.png";
-import Home2 from "../codify/codify-home2.png";
-import Whiteboard from "../codify/whiteboard.png";
-import Whiteboard2 from "../codify/whiteboard2.png";
-import Resources from "../codify/resources.png";
+
 
 const items = [
   {
@@ -88,10 +80,6 @@ export default function Codify() {
             <Chip icon={<Css style={{color: "white"}}/>} label="CSS/Bootstrap" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
             <Chip icon={<Brush style={{color: "white"}}/>} label="Figma & Canva" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
             <Chip icon={<Brush style={{color: "white"}}/>} label="Material UI" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
-            <Chip icon={<Javascript style={{color: "white"}}/>} label="Node/ExpressJS" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<SetMeal style={{color: "white"}}/>} label="MySQL" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<VpnKey style={{color: "white"}}/>} label="JSON Web Tokens" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<Security style={{color: "white"}}/>} label="BCrypt" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
             <Chip icon={<Route style={{color: "white"}}/>} label="React Router" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
             <Chip icon={<ThumbUp style={{color: "white"}}/>} label="Flaticon/React-icons" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
             </Stack>
