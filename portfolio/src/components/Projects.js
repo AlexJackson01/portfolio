@@ -3,6 +3,7 @@ import Middle from './projects/middle/Middle';
 import Codify from './projects/codify/Codify';
 import Reliked from './projects/reliked/Reliked';
 import MFB from './projects/mighty-fierce-birth/MFB';
+// import Wordle from "./projects/wordle/Wordle";
 import Fade from 'react-reveal/Fade';
 
 export default function Projects() {
@@ -17,6 +18,7 @@ export default function Projects() {
             <Codify />
             <Reliked />
             <MFB />
+            {/* <Wordle /> */}
 
             <div className="project-container">
              <h4>Currently in development...</h4> 
