@@ -96,6 +96,11 @@ h6 {
     color: white;
 }
 
+.see-projects {
+    display: block;
+    margin: 0 auto;
+}
+
 .project-image {
     margin-top: 50px;
 }
