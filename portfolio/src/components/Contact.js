@@ -29,7 +29,7 @@ export default function Contact() {
     };
 
   return (
-    <div>
+    <div className="contact-footer">
         <Fade bottom>
         <h4>Contact Me</h4>
         <div className="form">
@@ -73,6 +73,11 @@ export default function Contact() {
 
         <p className='contact-confirmation'>{emailSent}</p>
     </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     </Fade>
     </div>
   )

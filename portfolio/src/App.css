@@ -108,6 +108,7 @@ h5 {
     font-weight: 10;
     color: white;
     padding-bottom: 30px;
+    margin-top: -20px;
 }
 
 h6 {
@@ -241,6 +242,7 @@ footer {
     color: #93baa8;
     text-align: center;
     padding: 80px;
+    height: 100%;
 }
 
 .information-alternative {
