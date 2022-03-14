@@ -89,6 +89,22 @@ h2 {
     padding-bottom: 30px;
 }
 
+h3 {
+    /* font-size: 80px; */
+    font-family: "Montserrat", cursive;
+    /* font-weight: 10; */
+    color: white;
+    padding: 10px;
+}
+
+h5 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    font-weight: 10;
+    color: white;
+    padding-bottom: 30px;
+}
+
 h6 {
     /* font-size: 80px; */
     font-family: "Montserrat", cursive;
@@ -99,6 +115,10 @@ h6 {
 .see-projects {
     display: block;
     margin: 0 auto;
+}
+
+.project-image-dev {
+    height: 200px;
 }
 
 .project-image {

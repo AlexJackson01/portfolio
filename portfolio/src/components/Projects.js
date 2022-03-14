@@ -2,6 +2,7 @@ import React from 'react';
 import Middle from './projects/middle/Middle';
 import Codify from './projects/codify/Codify';
 import Reliked from './projects/reliked/Reliked';
+import MFBLogo from './projects/mighty-fierce-birth/MFB-logo2.png';
 import MFB from './projects/mighty-fierce-birth/MFB';
 // import Wordle from "./projects/wordle/Wordle";
 import Fade from 'react-reveal/Fade';
@@ -17,26 +18,19 @@ export default function Projects() {
             <Middle />
             <Codify />
             <Reliked />
-            <MFB />
+            {/* <MFB /> */}
             {/* <Wordle /> */}
 
-            <div className="project-container">
-             <h4>Currently in development...</h4> 
-
+            <h5>Currently in development...</h5><br /> 
+            <div className="project-container">            
             <div className="project-card">
-          <img className="project-image" src="images/RikRok.png" alt="Project 1" />
-          <h3>TikTok Clone</h3>
-          <p className="subtext">This is my project...</p>
-          <hr />
-          <p className="subtext">
-            <a
-              className="project-link"
-              href="https://naughty-cray-2e5fd3.netlify.app/#/"
-              >View here</a>
-          </p>
+              <img className="project-image-dev" src={MFBLogo} alt="MFB Logo" />
+              <h3>Mighty Fierce Birth</h3>
+              <p className="subtext">This is my project...</p>
+              <hr />
         </div>
         <div className="project-card">
-          <img className="project-image" src="images/BB.png" alt="Project 2" />
+          <img className="project-image-dev" src="images/BB.png" alt="Project 2" />
           <h3>Beaut Bakes Website</h3>
           <p className="subtext">This is my project...</p>
           <hr />
