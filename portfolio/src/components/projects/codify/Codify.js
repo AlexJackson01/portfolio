@@ -40,14 +40,6 @@ const items = [
     name: "Resources",
     Image: Resources
   },
-  {
-    name: "Figma Design",
-    Image: Figma_1  
-  },
-  {
-    name: "Figma Design",
-    Image: Figma_2  
-  },
 ]
 
 const Item = ({ item }) => {
@@ -71,38 +63,43 @@ export default function Codify() {
                 <div className='projects row'>
                 <div className='col-6'>
                 <h2>Codify</h2>
-                <h6>Full Stack</h6>
             <div className='tech-stack'>
-            <Stack direction="row" spacing={1} sx={{color: "white", display: "block", margin: "0", }}>
-            <Chip icon={<Javascript style={{color: "white"}}/>} label="Javascript" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<Hub style={{color: "white"}}/>} label="React" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
-            <Chip icon={<Css style={{color: "white"}}/>} label="CSS/Bootstrap" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
-            <Chip icon={<Brush style={{color: "white"}}/>} label="Figma & Canva" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
-            <Chip icon={<Brush style={{color: "white"}}/>} label="Chakra UI" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
-            <Chip icon={<Javascript style={{color: "white"}}/>} label="Node/ExpressJS" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<SetMeal style={{color: "white"}}/>} label="MySQL" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<VpnKey style={{color: "white"}}/>} label="JSON Web Tokens" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<Security style={{color: "white"}}/>} label="BCrypt" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<LocalPostOffice style={{color: "white"}}/>} label="Postman" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<Quiz style={{color: "white"}}/>} label="QuizAPI" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<TableView style={{color: "white"}}/>} label="DrawSQL" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<TextFields style={{color: "white"}}/>} label="Draft-JS/DOM-Purify/html-react-parser" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<Brush style={{color: "white"}}/>} label="HTML5 Canvas" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<FormatShapes style={{color: "white"}}/>} label="RoughJS/Perfect Freehand" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<ColorLens style={{color: "white"}}/>} label="React Color" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
-            <Chip icon={<Route style={{color: "white"}}/>} label="React Router" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
-            <Chip icon={<ThumbUp style={{color: "white"}}/>} label="Flaticon/React-icons" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
-            <Chip icon={<Biotech style={{color: "white"}}/>} label="Jest/Enzyme" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
-            </Stack>
-            
-</div>
+              <Stack direction="row" spacing={1} sx={{color: "white", display: "block", margin: "0", }}>
+              <Chip icon={<Javascript style={{color: "white"}}/>} label="Javascript" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<Hub style={{color: "white"}}/>} label="React" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+              <Chip icon={<Css style={{color: "white"}}/>} label="CSS/Bootstrap" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+              <Chip icon={<Brush style={{color: "white"}}/>} label="Figma & Canva" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+              <Chip icon={<Brush style={{color: "white"}}/>} label="Chakra UI" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+              <Chip icon={<Javascript style={{color: "white"}}/>} label="Node/ExpressJS" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<SetMeal style={{color: "white"}}/>} label="MySQL" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<VpnKey style={{color: "white"}}/>} label="JSON Web Tokens" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<Security style={{color: "white"}}/>} label="BCrypt" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<LocalPostOffice style={{color: "white"}}/>} label="Postman" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<Quiz style={{color: "white"}}/>} label="QuizAPI" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<TableView style={{color: "white"}}/>} label="DrawSQL" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<TextFields style={{color: "white"}}/>} label="Draft-JS/DOM-Purify/html-react-parser" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<Brush style={{color: "white"}}/>} label="HTML5 Canvas" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<FormatShapes style={{color: "white"}}/>} label="RoughJS/Perfect Freehand" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<ColorLens style={{color: "white"}}/>} label="React Color" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
+              <Chip icon={<Route style={{color: "white"}}/>} label="React Router" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+              <Chip icon={<ThumbUp style={{color: "white"}}/>} label="Flaticon/React-icons" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+              <Chip icon={<Biotech style={{color: "white"}}/>} label="Jest/Enzyme" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}} />
+              </Stack>
 
-<p className='project-description'>Codify is a collaborative full stack project created with two of my fellow bootcamp students. No matter your background, learning to program requires discipline and dedication, along with the ability to evaluate your own errors, learn from your mistakes, and sift through massive amounts of information in order to find code solutions that work for your needs. We designed Codify with our own experience as bootcamp students in mind, hoping to provide tools to facilitate some of the practical, organisational needs of programmers, as well as to provide spaces that encourage active learning.</p>
-<p className='project-description'>For this project, I designed a name and logo that reflected the initial idea - a learning app for coding where work and resources can be codified. I also designed and built a simple landing page and an interactive whiteboard that can be used to visualise programming concepts, take, and save notes. People learn in different ways and for students new to coding, it may be difficult to really understand how something works by reviewing lines of code or written notes. The whiteboard feature is a way for students to visualise bootcamp material during and after class lectures to make more sense of complex coding concepts.</p>
-<p className='project-buttons'><Button variant="contained" href="https://meet-in-the-middle.netlify.app" size="large" sx={{marginRight: "10px", fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
+</div>
+<p className='project-description'>
+  Codify is a collaborative Full Stack app that provides educational tools to coding bootcamp students in order to facilitate their practical and active learning. I implemented features such as:</p>
+  <p className='project-description'>
+    <ul>
+      <li>An interactive whiteboard for desktop that allows users to create their own visual notes and notes and diagrams for more effective learning and learning and understanding of complex coding concepts. Built tools such as freehand/shape drawing, selecting and resizing elements, local image uploads, draggable sticky notes and a download function.</li>
+      <li>A logo, app name and mobile responsive landing page with images and animated taglines that deliver a clear message on the app's purpose.</li>
+    </ul>
+</p>
+
+<p className='project-buttons'><Button variant="contained" href="http://codify-ais.herokuapp.com" size="large" sx={{marginRight: "10px", fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           See the live app
           </Button>
-          <Button variant="contained" href="https://github.com/AlexJackson01/meet-in-the-middle" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
+          <Button variant="contained" href="https://github.com/AlexJackson01/codify" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           See on Github
           </Button></p>
             </div>
