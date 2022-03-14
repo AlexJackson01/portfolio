@@ -16,7 +16,7 @@ export default function About() {
             <p>I thrive in any situation where I can work collaboratively / independently to solve complex problems, and meet deadlines or objectives. I’m a champion for #womenintech and I’m highly passionate about how advancements in the tech field can be used for good. I’m interested in finding an opportunity that allows me to create impactful products that make a real positive difference to businesses and their customers.</p>
             <p>I specialise in writing clean, testable code as well as designing and building visually appealing full stack applications with users front of mind, using technologies such as Javascript, React, MySQL, Node/ExpressJS, GraphQL, Firebase/Cloud Firestore and more.</p>
             <p>If you'd like to have a chat about my projects or job opportunities, please drop me an email using the contact form below. I welcome all feedback and messages to further my journey into tech.</p>
-            <div className='see-projects'>
+        <div className='see-projects'>
           <Button variant="contained" href="#projects" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           Check Out My Projects
           </Button>

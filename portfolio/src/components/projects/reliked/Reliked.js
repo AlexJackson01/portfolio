@@ -70,7 +70,7 @@ export default function Reliked() {
     <div>
         <section>
             <Fade bottom>
-                <div className='projects row'>
+                <div className='project-carousels row'>
                 <div className='col-6'>
 
         <Carousel autoPlay className='project-carousel' indicators={true} NextIcon={<ArrowForward />}  PrevIcon={<ArrowBack/>} navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS

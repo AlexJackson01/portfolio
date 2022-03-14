@@ -52,7 +52,7 @@ export default function Codify() {
     <div>
         <section>
             <Fade bottom>
-                <div className='projects row'>
+                <div className='project-carousels row'>
                 <div className='col-6'>
                 <h2>Codify</h2>
             <div className='tech-stack'>

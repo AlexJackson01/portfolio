@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.project-carousels {
+    margin-top: 30px;
+}
+
 .logo {
     height: 70px;
     padding: 10px;
@@ -79,6 +83,7 @@ h4 {
     font-family: "Pacifico", cursive;
     font-weight: 10;
     color: white;
+    padding-bottom: 20px;
 }
 
 h2 {
@@ -115,6 +120,7 @@ h6 {
 .see-projects {
     display: block;
     margin: 0 auto;
+    margin-top: -30px;
 }
 
 .project-image-dev {
