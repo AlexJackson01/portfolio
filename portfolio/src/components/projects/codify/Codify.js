@@ -21,16 +21,8 @@ const items = [
       Image: Logo,
   },
   {
-      name: "Landing Page",
-      Image: Home
-  },
-  {
     name: "Landing Page",
     Image: Home2
-  },
-  {
-    name: "Whiteboard",
-    Image: Whiteboard
   },
   {
     name: "Whiteboard",
