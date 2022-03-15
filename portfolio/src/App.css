@@ -33,6 +33,17 @@ html {
     margin-right: 20px;
 }
 
+.contact-link {
+    color: white;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+.contact-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
 .nav-links:hover {
     color: white;
     text-decoration: none;
@@ -66,6 +77,7 @@ h1 {
 }
 
 .social {
+    height: 100px;
     margin: 20px;
 }
 
@@ -83,7 +95,8 @@ h4 {
     font-family: "Pacifico", cursive;
     font-weight: 10;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 h2 {
@@ -91,7 +104,7 @@ h2 {
     font-family: "Pacifico", cursive;
     font-weight: 10;
     color: white;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 h3 {
@@ -119,9 +132,11 @@ h6 {
 }
 
 .see-projects {
-    display: block;
+    /* display: block; */
     margin: 0 auto;
-    margin-top: -30px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    /* margin-top: -30px; */
 }
 
 .project-image-dev {
@@ -157,7 +172,7 @@ h6 {
 p {
     font-family: "Montserrat", sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .project-description {
@@ -180,6 +195,7 @@ p {
 .project-buttons {
     margin-top: 40px;
     margin-right: 10px;
+    margin-bottom: 100px;
 }
 
 .app-button {
@@ -193,6 +209,9 @@ p {
 .headshot {
     height: 300px;
     border-radius: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .headshot-container {
@@ -314,243 +333,42 @@ form {
     font-family: "Montserrat", sans-serif;
 }
 
-
-/* body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.intro {
-    background-color: #69ba97;
-    color: white;
-    font-size: 70px;
-    font-weight: 50;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-section {
-    background-color: white;
-}
-
-.hero {
-    background-color: #69ba97;
-    color: white;
-    font-size: 40px;
-    height: 100vh;
-}
-
-.logo {
-    height: 70px;
-}
-
-.hamburger {
-    color: white;
-}
-
-
-
-.footer-credits p {
-    font-size: 20px;
-    color: darkgray;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
-}
-
-li {
-    text-decoration: none;
-}
-
-h1 {
-    font-size: 90px;
-    font-family: "Pacifico", cursive;
-    margin: 0;
-    font-weight: 50;
-}
-
-h2 {
-    font-size: 80px;
-    font-family: "Pacifico", cursive;
-    font-weight: 10;
-    color: #fcc;
-    text-shadow: -1px 0 #539176, 0 1px #539176, 1px 0 #539176, 0 -1px #539176;
-}
-
-p {
-    margin: 0;
-    font-weight: 300;
-    font-size: 30px;
-}
-
-
-
-.hero-area {
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero-text {
-    margin-left: 80px;
-    margin-bottom: 90px;
-}
-
-.button {
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-    border: solid #539176 2px;
-    background-color: #fcc;
-    color: #539176 !important;
-    text-align: center;
-    font-weight: 300;
-    font-size: 30px;
-    padding-top: 10px;
-    margin-top: 20px;
-}
-
-.button-text {
-    color: #539176;
-}
-
-.button-text:hover {
-    color: #fcc;
-}
-
-
-
-.button:active {
-    background-color: #a9a9a9;
-    color: #808080;
-}
-
-.socials {
-    padding-bottom: 100px;
-}
-
-.logo {
-    font-family: "Pacifico", cursive;
-    margin: 18px;
-}
-
-.social {
-    margin: 20px;
-}
-
-.sub-section-alternative {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 50px;
-    height: 100vh;
-}
-
-
-
-@media only screen and (max-width: 1000px) {
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-.project-image {
-    margin-top: 25px;
-    width: 200px;
-    border-radius: 50%;
-    border: solid #539176 1px;
-}
-
-hr {
-    margin-left: 20px;
-    margin-right: 20px;
-    color: lightgray;
-}
-
-
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-
-
-.hamburger {
-    display: none;
-}
-
-.hamburger:focus {
-    outline: 0;
-}
-
-@media only screen and (max-width: 1000px) {
-    .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
-    }
-    ul {
-        display: none;
-        background-color: #7acaa6;
-        margin: 0px;
-    }
+@media only screen and (max-width: 800px) {
     h1 {
-        font-size: 110px;
+        font-size: 55px;
     }
-    h2 {
-        font-size: 80px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-title {
+        font-size: 20px;
+    }
+    .hero {
+        height: 100vh;
+        width: 100vw;
+    }
+    .headshot {
+        height: 200px;
+    }
+    .social {
+        height: 25px;
+    }
+    .sub-section {
+        height: 100%;
+    }
+    .project-buttons {
+        margin-top: 40px;
+        margin-right: 0px;
+        margin-bottom: 100px;
     }
     p {
-        font-size: 35px;
-    }
-    .information p {
-        font-size: 35px;
-    }
-    ul.show {
-        display: block;
-    }
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #7acaa6;
-        margin-bottom: 10px;
-    }
-    #nav-list {
-        font-size: 45px;
-    }
-    .logo {
-        display: none;
-    }
-    .project-card {
-        width: 400px;
-        height: 700px;
-        font-size: 25px;
-        padding: 0;
+        font-size: 14px;
     }
     .project-image {
         width: 300px;
     }
     .subtext {
-        font-size: 30px;
+        font-size: 12px;
     }
     .button {
         width: 250px;
@@ -571,4 +389,4 @@ a {
     .button-text {
         font-size: 35px;
     }
-} */
+}

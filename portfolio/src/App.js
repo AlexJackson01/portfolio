@@ -33,8 +33,6 @@ function App() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#fff"
-                width="50"
-                height="50"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -44,12 +42,10 @@ function App() {
             </a>
           </div>
           <div>
-            <a href="https://www.github.com/AlexJackson01" class="social">
+            <a href="https://www.github.com/AlexJackson01" className="social">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#fff"
-                width="50"
-                height="50"
                 viewBox="0 0 24 24"
               >
                 <path

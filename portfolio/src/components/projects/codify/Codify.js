@@ -1,60 +1,60 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Carousel from 'react-material-ui-carousel'
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 import {Javascript, Hub, Css, Brush, Route, ThumbUp, SetMeal, VpnKey, Security, LocalPostOffice, Quiz,
-TableView, TextFields, FormatShapes, ColorLens, Biotech, ArrowForward, ArrowBack} from '@mui/icons-material';
+TableView, TextFields, FormatShapes, ColorLens, Biotech} from '@mui/icons-material';
 import Logo from "../codify/codify-logo.png";
-import Figma_1 from "../codify/figma1.png";
-import Figma_2 from "../codify/figma2.png";
 import Home from "../codify/codify-home.png";
 import Home2 from "../codify/codify-home2.png";
 import Whiteboard from "../codify/whiteboard.png";
 import Whiteboard2 from "../codify/whiteboard2.png";
 import Resources from "../codify/resources.png";
 
-const items = [
-  {
-      name: "Meet in the Middle Logo",
-      Image: Logo,
-  },
-  {
-    name: "Landing Page",
-    Image: Home2
-  },
-  {
-    name: "Whiteboard",
-    Image: Whiteboard2
-  },
-  {
-    name: "Resources",
-    Image: Resources
-  },
-]
-
-const Item = ({ item }) => {
-  return (
-    <div style={{ width: "100%", height: "100%" }}>
-      <div>
-      <img className="project-image" src={item.Image} />
-      </div>
-      <div>
-      </div>
-      </div>
-  );
+function srcset(image, size, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
 }
-
 
 export default function Codify() {
   return (
     <div>
         <section>
             <Fade bottom>
-                <div className='project-carousels row'>
-                <div className='col-6'>
-                <h2>Codify</h2>
+            <h2>Codify</h2>
+                <div className='row'>
+                <div className='col-lg-6 col-sm-12'>
+                <ImageList
+                // sx={{ width: "100%" }}
+                variant="quilted"
+                cols={4}
+                rowHeight={121}
+            >
+            {itemData.map((item) => (
+                <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                <img
+                    {...srcset(item.img, 121, item.rows, item.cols)}
+                    alt={item.title}
+                    loading="lazy"
+                />
+                <ImageListItemBar
+            title={item.title}
+            subtitle={item.author}
+          />
+                </ImageListItem>
+            ))}
+            </ImageList>
+
+            </div>
+        <div className='col-lg-6 col-sm-12'>
             <div className='tech-stack'>
               <Stack direction="row" spacing={1} sx={{color: "white", display: "block", margin: "0", }}>
               <Chip icon={<Javascript style={{color: "white"}}/>} label="Javascript" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
@@ -95,23 +95,9 @@ export default function Codify() {
           See on Github
           </Button></p>
             </div>
-        <div className='col-6'>
+        <div className='col-lg-6 col-sm-12'>
 
 
-        <Carousel autoPlay className='project-carousel' indicators={true} NextIcon={<ArrowForward />}  PrevIcon={<ArrowBack/>} navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
-        style: {
-            backgroundColor: '#e3997c',
-            color: "black",
-            opacity: 100
-            // borderRadius: 0
-        }
-    }} 
-
-        >
-            {
-                items.map( (item, i) => <Item key={i} item={item} /> )
-            }
-        </Carousel>
             </div>
             </div>
       </Fade>
@@ -119,3 +105,30 @@ export default function Codify() {
     </div>
   )
 }
+
+const itemData = [
+  {
+    img: Logo,
+    title: "Logo",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: Home2,
+    title: "Landing Page",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: Whiteboard2,
+    title: "Login Page",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: Resources,
+    title: "Nearby Search",
+    rows: 2,
+    cols: 2,
+  },
+];

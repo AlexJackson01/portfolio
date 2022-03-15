@@ -3,6 +3,9 @@ import Fade from 'react-reveal/Fade';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 import {Javascript, Hub, Css, ShoppingBag, SetMeal, VpnKey, Route, Security, 
   LocalFireDepartment, Email, ArrowForward, ArrowBack} from '@mui/icons-material';
 import Carousel from 'react-material-ui-carousel'
@@ -15,81 +18,47 @@ import Products from "../reliked/reliked-products.png";
 import Sales from "../reliked/reliked-sales.png";
 import LoginPage from "../reliked/reliked-login.png";
 
-
-const items = [
-        {
-            name: "Reliked Logo",
-            Image: Logo,
-        },
-        {
-            name: "Login Page",
-            Image: LoginPage
-        },
-        {
-          name: "Admin Page",
-          Image: Admin
-        },
-        {
-          name: "Admin Page",
-          Image: Admin2
-        },
-        {
-          name: "Products Filter",
-          Image: Products
-        },
-        {
-          name: "Pagination",
-          Image: Sales
-        },
-        {
-          name: "Vendor Page",
-          Image: Vendor
-        },
-        {
-          name: "Vendor Page",
-          Image: Vendor2
-        },
-    ]
-
-
-    const Item = ({ item }) => {
-      return (
-        <div style={{ width: "100%", height: "100%" }}>
-          <div>
-          <img className="project-image" src={item.Image} />
-          </div>
-          <div>
-          </div>
-          </div>
-      );
-    }
-
+function srcset(image, size, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
 
 export default function Reliked() {
   return (
     <div>
         <section>
             <Fade bottom>
-                <div className='project-carousels row'>
-                <div className='col-6'>
-
-        <Carousel autoPlay className='project-carousel' indicators={true} NextIcon={<ArrowForward />}  PrevIcon={<ArrowBack/>} navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
-        style: {
-            backgroundColor: '#e3997c',
-            color: "black",
-            opacity: 100
-            // borderRadius: 0
-        }
-    }} 
-
-        >
-            {
-                items.map( (item, i) => <Item key={i} item={item} /> )
-            }
-        </Carousel>
-            </div>
-        <div className='col-6'>
             <h2>Reliked Multivendor Marketplace<br />Feature Extension</h2>
+
+                <div className='row'>
+                <div className='col-lg-6 col-sm-12'>
+
+                <ImageList
+                // sx={{ width: "100%" }}
+                variant="quilted"
+                cols={4}
+                rowHeight={121}
+            >
+            {itemData.map((item) => (
+                <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                <img
+                    {...srcset(item.img, 121, item.rows, item.cols)}
+                    alt={item.title}
+                    loading="lazy"
+                />
+                <ImageListItemBar
+            title={item.title}
+            subtitle={item.author}
+          />
+                </ImageListItem>
+            ))}
+            </ImageList>
+            </div>
+        <div className='col-lg-6 col-sm-12'>
             <div className='tech-stack'>
               <Stack className="tech-icons" direction="row" spacing={1} sx={{color: "white", display: "block", margin: "0"}}>
               <Chip icon={<Javascript style={{color: "white"}}/>} label="Javascript" variant="Filled" sx={{color: "white", fontFamily: "Montserrat"}}/>
@@ -127,3 +96,30 @@ export default function Reliked() {
     </div>
   )
 }
+
+const itemData = [
+  {
+    img: Logo,
+    title: "Logo",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: Admin,
+    title: "Landing Page",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: Sales,
+    title: "Login Page",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: LoginPage,
+    title: "Nearby Search",
+    rows: 2,
+    cols: 2,
+  },
+];
