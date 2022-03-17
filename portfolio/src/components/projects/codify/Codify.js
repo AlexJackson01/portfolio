@@ -31,7 +31,6 @@ export default function Codify() {
             <Fade bottom>
             <h2>Codify</h2>
                 <div className='row'>
-                <div className='project-grid'>
                 <div className='col-lg-6 col-sm-12'>
                   
                 <ImageList
@@ -50,7 +49,6 @@ export default function Codify() {
                 </ImageListItem>
             ))}
             </ImageList>
-            </div>
             </div>
         <div className='col-lg-6 col-sm-12'>
             <div className='tech-stack'>
