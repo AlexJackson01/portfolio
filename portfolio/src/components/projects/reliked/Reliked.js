@@ -85,9 +85,9 @@ export default function Reliked() {
               </ul>
             </p>
 
-            <p className='project-buttons'><Button variant="contained" href="https://github.com/AlexJackson01/meet-in-the-middle" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
+            {/* <p className='project-buttons'><Button variant="contained" href="https://github.com/AlexJackson01/meet-in-the-middle" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           See on Github
-          </Button></p>
+          </Button></p> */}
           </div>
           </div>
 

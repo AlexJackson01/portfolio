@@ -3,9 +3,7 @@ import Middle from './projects/middle/Middle';
 import Codify from './projects/codify/Codify';
 import Reliked from './projects/reliked/Reliked';
 import MFBLogo from './projects/mighty-fierce-birth/MFB-logo2.png';
-import Music from './projects/music/music-logo.png';
-import MFB from './projects/mighty-fierce-birth/MFB';
-// import Wordle from "./projects/wordle/Wordle";
+import Mood from './projects/moodtrack/moodtrack-logo.png';
 import Fade from 'react-reveal/Fade';
 
 export default function Projects() {
@@ -31,8 +29,8 @@ export default function Projects() {
               <hr />
         </div>
         <div className="project-card">
-              <img className="project-image-dev" src={Music} alt="MFB Logo" />
-              <h3>Music & Wellbeing App</h3>
+              <img className="project-image-dev" src={Mood} alt="MFB Logo" />
+              <h3>MoodTrack</h3>
               <p className="subtext">Full Stack mobile application that promotes daily wellbeing check-ins and facilitates the use of music as a positive outlet for people's mental health.</p>
               <hr />
         </div>
