@@ -2,6 +2,19 @@
             scroll-behavior: smooth;
         }
         
+        .portrait {
+            background: url("./me.jpg") no-repeat;
+            height: 300px;
+            border-radius: 300px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        
+        .portrait:hover {
+            background: url("./me2.jpg") no-repeat;
+        }
+        
         .project-carousels {
             margin-top: 30px;
         }

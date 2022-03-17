@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Fade from 'react-reveal/Fade';
-import Me from "../me.png";
 import Button from '@mui/material/Button';
+import Me from "../me.jpg";
+import Me2 from "../me2.jpg";
 import '../../src/App.css';
 
 
 
 export default function About() {
+  const [img, setImg] = useState(Me);
+
   return (
     <div className='sub-section'>
         <Fade bottom>
@@ -14,7 +17,7 @@ export default function About() {
             <h4>Welcome</h4>
             <div className='row'>
               <div className='col-lg-4 col-sm-12'>
-                <img className="headshot" src={Me} alt="Alex Jackson headshot" />
+                <img className="headshot" src={img} alt="Alex Jackson headshot" onMouseEnter={() => setImg(Me2)} />
     </div>
     <div className='col-lg-8 col-sm-12'>
             <p className='about-text'>Hello, I'm Alex and I'm based in London, UK. I am a Full Stack Developer with over nine years of experience in client relations, project management and automation.</p>

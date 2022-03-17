@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Me from "../src/me.png";
 import Fade from 'react-reveal/Fade';
 import Button from '@mui/material/Button';
 import About from './components/About';
