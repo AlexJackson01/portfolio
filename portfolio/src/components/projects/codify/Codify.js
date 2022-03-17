@@ -31,7 +31,9 @@ export default function Codify() {
             <Fade bottom>
             <h2>Codify</h2>
                 <div className='row'>
+                <div className='project-grid'>
                 <div className='col-lg-6 col-sm-12'>
+                  
                 <ImageList
                 // sx={{ width: "100%" }}
                 variant="quilted"
@@ -45,14 +47,10 @@ export default function Codify() {
                     alt={item.title}
                     loading="lazy"
                 />
-                <ImageListItemBar
-            title={item.title}
-            subtitle={item.author}
-          />
                 </ImageListItem>
             ))}
             </ImageList>
-
+            </div>
             </div>
         <div className='col-lg-6 col-sm-12'>
             <div className='tech-stack'>
@@ -87,18 +85,16 @@ export default function Codify() {
       <li>A logo, app name and mobile responsive landing page with images and animated taglines that deliver a clear message on the app's purpose.</li>
     </ul>
 </p>
+            </div>
+            </div>
 
-<p className='project-buttons'><Button variant="contained" href="http://codify-ais.herokuapp.com" size="large" sx={{marginRight: "10px", fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
+            <div className='row'>
+            <div className='project-buttons'><Button variant="contained" href="http://codify-ais.herokuapp.com" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           See the live app
           </Button>
           <Button variant="contained" href="https://github.com/AlexJackson01/codify" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           See on Github
-          </Button></p>
-            </div>
-        <div className='col-lg-6 col-sm-12'>
-
-
-            </div>
+          </Button></div>
             </div>
       </Fade>
     </section>

@@ -45,10 +45,7 @@ export default function Middle() {
                     alt={item.title}
                     loading="lazy"
                 />
-                <ImageListItemBar
-            title={item.title}
-            subtitle={item.author}
-          />
+
                 </ImageListItem>
             ))}
             </ImageList>
@@ -84,15 +81,21 @@ export default function Middle() {
             </ul>
             </p>
 
-            <p className='project-buttons'><Button variant="contained" href="https://meet-in-the-middle.netlify.app" size="large" sx={{marginRight: "10px", fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
+ 
+          </div><div className='row'>
+        <div className='project-buttons'>
+          <div className='col'>
+          <Button variant="contained" href="https://meet-in-the-middle.netlify.app" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           See the live app
           </Button>
+          </div>
+          <div className='col'>
           <Button variant="contained" href="https://github.com/AlexJackson01/meet-in-the-middle" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           See on Github
-          </Button></p>
+          </Button></div>
           </div>
           </div>
-
+          </div>
       </Fade>
     </section>
     </div>

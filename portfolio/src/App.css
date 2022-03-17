@@ -1,392 +1,404 @@
-html {
-    scroll-behavior: smooth;
-}
-
-.project-carousels {
-    margin-top: 30px;
-}
-
-.logo {
-    height: 70px;
-    padding: 10px;
-}
-
-.hero {
-    background-color: #85ae92;
-    color: white;
-    font-size: 40px;
-    height: 100vh;
-}
-
-.nav-links-menu {
-    color: #679a77;
-    text-decoration: none;
-    text-transform: none;
-    font-size: 20px;
-}
-
-.nav-links {
-    color: white;
-    text-decoration: none;
-    text-transform: none;
-    font-size: 20px;
-    margin-right: 20px;
-}
-
-.contact-link {
-    color: white;
-    text-decoration: underline;
-    text-transform: none;
-}
-
-.contact-link:hover {
-    color: white;
-    font-weight: bold;
-}
-
-.nav-links:hover {
-    color: white;
-    text-decoration: none;
-    text-transform: none;
-    font-size: 20px;
-    margin-right: 20px;
-}
-
-h1 {
-    font-size: 90px;
-    font-family: "Pacifico", cursive;
-    margin: 0;
-    font-weight: 50;
-}
-
-.hero-area {
-    padding: 50px;
-    display: flex;
-    height: 75%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-}
-
-.socials {
-    padding-bottom: 100px;
-}
-
-.social {
-    height: 100px;
-    margin: 20px;
-}
-
-.sub-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
-    font-size: 90px;
-    height: 100vh;
-    background-color: #baa0bd;
-}
-
-h4 {
-    font-size: 80px;
-    font-family: "Pacifico", cursive;
-    font-weight: 10;
-    color: white;
-    padding-bottom: 40px;
-    text-align: center;
-}
-
-h2 {
-    /* font-size: 80px; */
-    font-family: "Pacifico", cursive;
-    font-weight: 10;
-    color: white;
-    padding-bottom: 40px;
-}
-
-h3 {
-    /* font-size: 80px; */
-    font-family: "Montserrat", cursive;
-    /* font-weight: 10; */
-    color: white;
-    padding: 10px;
-}
-
-h5 {
-    font-size: 50px;
-    font-family: "Pacifico", cursive;
-    font-weight: 10;
-    color: white;
-    padding-bottom: 30px;
-    margin-top: -20px;
-}
-
-h6 {
-    /* font-size: 80px; */
-    font-family: "Montserrat", cursive;
-    /* font-weight: 10; */
-    color: white;
-}
-
-.see-projects {
-    /* display: block; */
-    margin: 0 auto;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-    /* margin-top: -30px; */
-}
-
-.project-image-dev {
-    height: 200px;
-}
-
-.project-image {
-    margin-top: 50px;
-}
-
-.project-name {
-    color: black;
-}
-
-.project-carousel {
-    height: 100%;
-    width: 100%;
-    /* border: 1px solid white; */
-    margin-top: 20px;
-}
-
-.tech-stack {
-    display: block;
-    margin: 0 auto;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.tech-icons {
-    margin-bottom: 20px;
-}
-
-p {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-size: 16px;
-}
-
-.project-description {
-    font-size: 15px;
-}
-
-.project-image {
-    height: 500px;
-    margin-top: 100px;
-}
-
-.project-carousel {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: 700px;
-    height: 800px;
-}
-
-.project-buttons {
-    margin-top: 40px;
-    margin-right: 10px;
-    margin-bottom: 100px;
-}
-
-.app-button {
-    margin-right: 10px;
-}
-
-.information p {
-    font-size: 30px;
-}
-
-.headshot {
-    height: 300px;
-    border-radius: 300px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.headshot-container {
-    display: flex;
-    align-items: center;
-}
-
-.sub-section-alternative {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 50px;
-    height: 100%;
-    background-color: #c8595b;
-}
-
-.projects {
-    margin-top: 100px;
-}
-
-.project-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.project-card {
-    width: 300px;
-    height: 500px;
-    border: 1px solid white;
-    /* box-shadow: 5px 5px 15px lightgray; */
-    margin: 10px;
-    padding: 10px;
-}
-
-.subtext {
-    font-size: 15px;
-    font-weight: 300;
-}
-
-.project-link {
-    text-decoration: none;
-    color: #539176;
-}
-
-footer {
-    background-color: #afafb4;
-    color: #93baa8;
-    text-align: center;
-    padding: 80px;
-    height: 100%;
-}
-
-.information-alternative {
-    color: #93baa8;
-    text-shadow: -1px 0 #539176, 0 1px #539176, 1px 0 #539176, 0 -1px #539176;
-}
-
-form {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-
-.form {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    background-color: rgb(122, 122, 125, 0.5);
-    padding: 50px;
-    border-radius: 20px;
-}
-
-.form-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto;
-    height: 30px;
-    width: 300px;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-}
-
-.form-button {
-    width: 100px;
-    height: 30px;
-    border-radius: 30px;
-    border: solid #539176 2px;
-    background-color: #fcc;
-    color: #539176;
-    text-align: center;
-    font-weight: 500;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.font-button-container {
-    text-align: center;
-    display: block;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-}
-
-.form-button:hover {
-    background-color: #539176;
-    color: #fcc;
-    border: solid #69ba97 3px;
-}
-
-.button:hover {
-    background-color: #539176;
-    color: #fcc;
-    border: solid #fcc 3px;
-}
-
-.contact-confirmation {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-}
-
-@media only screen and (max-width: 800px) {
-    h1 {
-        font-size: 55px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .hero-title {
-        font-size: 20px;
-    }
-    .hero {
-        height: 100vh;
-        width: 100vw;
-    }
-    .headshot {
-        height: 200px;
-    }
-    .social {
-        height: 25px;
-    }
-    .sub-section {
-        height: 100%;
-    }
-    .project-buttons {
-        margin-top: 40px;
-        margin-right: 0px;
-        margin-bottom: 100px;
-    }
-    p {
-        font-size: 14px;
-    }
-    .project-image {
-        width: 300px;
-    }
-    .subtext {
-        font-size: 12px;
-    }
-    .button {
-        width: 250px;
-    }
-    .form-button {
-        width: 200px;
-        height: 60px;
-        font-size: 30px;
-    }
-    .form-row {
-        height: 60px;
-        width: 600px;
-        font-size: 30px;
-    }
-    .button-text {
-        font-size: 35px;
-    }
-    .button-text {
-        font-size: 35px;
-    }
-}
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .project-carousels {
+            margin-top: 30px;
+        }
+        
+        .logo {
+            height: 70px;
+            padding: 10px;
+        }
+        
+        .hero {
+            background-color: #85ae92;
+            color: white;
+            font-size: 40px;
+            height: 100vh;
+        }
+        
+        .nav-links-menu {
+            color: #679a77;
+            text-decoration: none;
+            text-transform: none;
+            font-size: 20px;
+        }
+        
+        .nav-links {
+            color: white;
+            text-decoration: none;
+            text-transform: none;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        
+        .contact-link {
+            color: white;
+            text-decoration: underline;
+            text-transform: none;
+        }
+        
+        .contact-link:hover {
+            color: white;
+            font-weight: bold;
+        }
+        
+        .nav-links:hover {
+            color: white;
+            text-decoration: none;
+            text-transform: none;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        
+        h1 {
+            font-size: 90px;
+            font-family: "Pacifico", cursive;
+            margin: 0;
+            font-weight: 50;
+        }
+        
+        .hero-area {
+            padding: 50px;
+            display: flex;
+            height: 75%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .hero-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+        }
+        
+        .socials {
+            padding-bottom: 100px;
+        }
+        
+        .social {
+            height: 100px;
+            margin: 20px;
+        }
+        
+        .sub-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 80px;
+            font-size: 90px;
+            height: 100vh;
+            width: 100vw;
+            background-color: #baa0bd;
+        }
+        
+        h4 {
+            font-size: 70px;
+            font-family: "Pacifico", cursive;
+            font-weight: 10;
+            color: white;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+        
+        h2 {
+            /* font-size: 80px; */
+            font-family: "Pacifico", cursive;
+            font-weight: 10;
+            color: white;
+            padding-bottom: 40px;
+        }
+        
+        h3 {
+            /* font-size: 80px; */
+            font-family: "Montserrat", cursive;
+            /* font-weight: 10; */
+            color: white;
+            padding: 10px;
+        }
+        
+        h5 {
+            font-size: 50px;
+            font-family: "Pacifico", cursive;
+            font-weight: 10;
+            color: white;
+            padding-bottom: 30px;
+            margin-top: 60px;
+        }
+        
+        h6 {
+            /* font-size: 80px; */
+            font-family: "Montserrat", cursive;
+            /* font-weight: 10; */
+            color: white;
+        }
+        
+        .see-projects {
+            /* display: block; */
+            margin: 0 auto;
+            margin-left: 0 auto;
+            margin-right: 0 auto;
+            /* margin-top: -30px; */
+        }
+        
+        .project-image-dev {
+            height: 200px;
+        }
+        
+        .project-image {
+            margin-top: 50px;
+        }
+        
+        .project-name {
+            color: black;
+        }
+        
+        .project-carousel {
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid white; */
+            margin-top: 20px;
+        }
+        
+        .tech-stack {
+            display: block;
+            margin: 0 auto;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        
+        .tech-icons {
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            font-size: 16px;
+            text-align: justify;
+        }
+        
+        .project-description {
+            font-size: 15px;
+        }
+        
+        .project-image {
+            height: 500px;
+            margin-top: 100px;
+        }
+        
+        .project-carousel {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            width: 700px;
+            height: 800px;
+        }
+        
+        .project-buttons {
+            display: block;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-right: 10px;
+            margin-bottom: 100px;
+        }
+        
+        .app-button {
+            margin-right: 10px;
+        }
+        
+        .information p {
+            font-size: 30px;
+        }
+        
+        .headshot {
+            height: 300px;
+            border-radius: 300px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        
+        .headshot-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .sub-section-alternative {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 50px;
+            height: 100%;
+            width: 100vw;
+            background-color: #c8595b;
+        }
+        
+        .projects {
+            margin-top: 100px;
+        }
+        
+        .project-container {
+            display: inline-block;
+            margin: 0 auto;
+            align-items: center;
+            /* justify-content: space-around; */
+            /* width: 100%; */
+        }
+        
+        .project-card {
+            width: 350px;
+            height: 500px;
+            border: 1px solid white;
+            /* box-shadow: 5px 5px 15px lightgray; */
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .subtext {
+            font-size: 15px;
+            font-weight: 300;
+        }
+        
+        .project-link {
+            text-decoration: none;
+            color: #539176;
+        }
+        
+        footer {
+            background-color: #afafb4;
+            color: #93baa8;
+            text-align: center;
+            padding: 80px;
+            height: 100%;
+            width: 100vw;
+        }
+        
+        .information-alternative {
+            color: #93baa8;
+            text-shadow: -1px 0 #539176, 0 1px #539176, 1px 0 #539176, 0 -1px #539176;
+        }
+        
+        form {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        
+        .form {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            background-color: rgb(122, 122, 125, 0.5);
+            padding: 50px;
+            border-radius: 20px;
+            width: 100%;
+        }
+        
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 auto;
+            height: 30px;
+            width: 300px;
+            font-family: "Roboto", sans-serif;
+            font-size: 15px;
+        }
+        
+        .form-button {
+            width: 100px;
+            height: 30px;
+            border-radius: 30px;
+            border: solid #539176 2px;
+            background-color: #fcc;
+            color: #539176;
+            text-align: center;
+            font-weight: 500;
+            font-size: 15px;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        .font-button-container {
+            text-align: center;
+            display: block;
+            margin-left: 0 auto;
+            margin-right: 0 auto;
+        }
+        
+        .form-button:hover {
+            background-color: #539176;
+            color: #fcc;
+            border: solid #69ba97 3px;
+        }
+        
+        .button:hover {
+            background-color: #539176;
+            color: #fcc;
+            border: solid #fcc 3px;
+        }
+        
+        .contact-confirmation {
+            color: white;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        @media only screen and (max-width: 800px) {
+            h1 {
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+        
+        @media only screen and (max-width: 1200px) {
+            .hero-title {
+                font-size: 20px;
+            }
+            .hero {
+                height: 100vh;
+                width: 100vw;
+            }
+            .headshot {
+                height: 200px;
+            }
+            .social {
+                height: 25px;
+            }
+            .sub-section {
+                height: 100%;
+                width: 100vw;
+            }
+            .sub-section-alternative {
+                height: 100%;
+                width: 100vw;
+            }
+            .project-buttons {
+                display: block;
+                margin: 0 auto;
+                margin-top: 40px;
+                margin-right: 0px;
+                margin-bottom: 100px;
+            }
+            .project-grid {
+                display: block;
+                margin: 0 auto;
+                width: 100vw;
+            }
+            p {
+                font-size: 14px;
+            }
+            .project-image {
+                width: 300px;
+            }
+            .subtext {
+                font-size: 12px;
+            }
+            .button {
+                width: 250px;
+            }
+            .form {
+                padding: 0px;
+            }
+        }

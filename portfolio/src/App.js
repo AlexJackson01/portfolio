@@ -20,7 +20,7 @@ function App() {
       <div className="hero-area">
         <div className="hero-text">
           <h1>Alex Jackson</h1>
-          <p className="hero-title">Front-End Developer</p>
+          <p className="hero-title">Full Stack Developer</p>
           <div>
           <Button variant="contained" href="#about-me" size="large" sx={{fontFamily: "Montserrat", backgroundColor: "#e3997c", "&:hover": {backgroundColor: "#e8ad96", color: "#486b53"}}}>
           About Me

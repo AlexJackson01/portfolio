@@ -50,10 +50,6 @@ export default function Reliked() {
                     alt={item.title}
                     loading="lazy"
                 />
-                <ImageListItemBar
-            title={item.title}
-            subtitle={item.author}
-          />
                 </ImageListItem>
             ))}
             </ImageList>
