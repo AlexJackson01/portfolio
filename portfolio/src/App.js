@@ -28,7 +28,7 @@ function App() {
         </div>
         <div className="socials">
           <div>
-            <a href="https://www.linkedin.com/alex-j-jackson" className="social">
+            <a href="https://www.linkedin.com/in/alex-j-jackson" className="social">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#fff"
